@@ -21,7 +21,7 @@
             document.querySelector(".galeria__contenido").classList.add("imagenes-cargadas");
 
             /* activo */
-            const enlacesCategorias = document.querySelectorAll(".nav a");
+            /* const enlacesCategorias = document.querySelectorAll(".nav a");
 
             enlacesCategorias.forEach((a) => {
                 a.addEventListener("click", (e) => {
@@ -38,7 +38,7 @@
                     // colocar activo al clickeado
                     e.target.classList.add("activo");
                 })
-            });
+            }); */
 
         })
 
@@ -48,7 +48,7 @@
 
         imagenes.forEach((img) => {
             img.addEventListener("click", (e) => {
-                const contenedorImg = document.querySelector(".contenedor-img picture img");
+                const contenedorImg = document.querySelector(".contenedor-img figure img");
                 const figCaptionImg = document.querySelector(".contenedor-img figcaption");
 
                 overlay.classList.add("overlay-activo");

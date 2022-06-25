@@ -14,6 +14,8 @@
     --colorNegro: #000000;
     --colorNegroRelax: #222;
 
+    --colorNuevo: #423400;
+
     /* Fonts (montserrat 400,700 / cardo 400 italic) */
     /* font-family: 'Cardo', serif;
     font-family: 'Montserrat Alternates', sans-serif; */
@@ -44,7 +46,7 @@ html {
 }
 
 ::selection {
-    background: var(--sec2);
+    background: var(--colorNuevo);
 }
 
 /* BODY */
@@ -52,10 +54,16 @@ body {
     font-family: var(--font);
     font-size: 1.8rem;
     line-height: 1.5;
-    background-color: var(--colornuevo3);
+    /* background-color: var(--colornuevo3); */
     color: var(--colorBlancoRelax);
-}
 
+    background-image: url("img/fondo_pinewood-1.jpg");
+    /* background-size: cover; */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
 
 /* GLOBALES: */
 .contenedor {
@@ -83,6 +91,10 @@ a {
     color: var(--colorFondoBlanco);
 }
 
+figure {
+    margin: 0;
+    padding: 0;
+}
 
 /* HEADERS */
 h1,
@@ -133,7 +145,7 @@ button:hover {
     display: flex;
     justify-content: space-between;
 
-    background: linear-gradient(90deg, var(--colornuevo3), var(--colornuevo2), var(--colornuevo1));
+    background: linear-gradient(90deg, var(--colornuevo3), var(--colornuevo2), var(--colorNuevo));
     background-size: 300% 300%;
     animation: gradient 3s alternate infinite;
     position: absolute;
@@ -159,8 +171,14 @@ button:hover {
     cursor: pointer;
 }
 
+.nav__logo img {
+    border-radius: 0;
+}
+
 .nav__logo:hover {
     cursor: pointer;
+    transform: scale(1.2);
+    transition: var(--d);
 }
 
 .nav__logo a:hover {
@@ -193,7 +211,7 @@ button:hover {
     gap: 3rem;
     transition: clip-path 1s ease-in-out;
 
-    background: linear-gradient(90deg, #5d2417, #8d4925, #c57d56);
+    background: linear-gradient(90deg, #5d2417, #8d4925, var(--colorNuevo));
     background-size: 300% 300%;
     animation: gradient 3s alternate infinite;
     position: absolute;
@@ -322,7 +340,7 @@ button:hover {
 }
 
 /* HEADER PORTADA */
-.header__portada {
+/* .header__portada {
     background-image: url("../media/img/a_lo_artesanal.webp");
     width: 100%;
     height: 20rem;
@@ -332,7 +350,7 @@ button:hover {
     padding: var(--separacion) 0;
     opacity: 60%;
     margin-top: 8rem;
-}
+} */
 
 
 /* SECTION */
@@ -342,19 +360,30 @@ section {
 
 /* A LO ARTESANAL */
 .a_lo_artesanal {
-    margin-top: 1rem;
+    margin-top: 12rem;
 }
 
 .a_lo_artesanal .titulo {
     text-shadow: 3px 3px 3px var(--colorPrimario);
 }
 
-.a_lo_artesanal .titulo:hover {
+.titulo a {
+    padding: 2rem;
+    background: var(--colorBlanco);
+
+    border-radius: var(--redondeo);
+    border: 2px dashed #C0C0C0;
+
+    box-shadow: 0 0 0 6px var(--colorBlanco), 2px 1px 6px 8px rgba(10, 10, 0, 0.5);
+}
+
+/* .a_lo_artesanal .titulo:hover {
     color: var(--colorBlanco);
     transform: scale(1.5);
-    transition: 1s;
+    transition: 2s;
+    transition-timing-function: ease-in-out;
     text-shadow: 2px 2px 2px var(--colorNegroRelax)
-}
+} */
 
 .a_lo_artesanal__contenido {
     text-align: center;
@@ -588,6 +617,9 @@ section {
     padding: 1rem;
     transition: transform var(--d) var(--e);
     z-index: 1;
+
+    align-items: center;
+    justify-content: center;
 }
 
 .card__content>*+* {
@@ -697,6 +729,9 @@ section {
     position: relative;
     width: 100%;
     height: 100%;
+
+    align-items: center;
+    justify-content: center;
 }
 
 .item-content img:hover {
@@ -746,7 +781,7 @@ section {
     right: 0;
     background-color: rgba(34, 34, 34, 0.7);
     width: 100%;
-    height: 100vh;
+    height: 100%;
 
     z-index: 1;
 
@@ -763,14 +798,15 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: var(--separacion);
+    /* margin-top: var(--separacion); */
     /* margin-bottom: var(--separacion); */
-    margin-bottom: 8rem;
+    /* margin-bottom: 8rem;
+    margin-top: 16rem; */
 }
 
-.contenedor-img picture {
-    width: 90%;
-    height: 90%;
+.contenedor-img figure {
+    /* width: 100%; */
+    /* height: 80vh; */
 
     display: flex;
     flex-direction: column;
@@ -778,17 +814,17 @@ section {
     align-items: center;
 }
 
-.contenedor-img picture img {
+.contenedor-img figure img {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
     margin: .5rem 0;
     /* width: 90%; */
     max-width: 100%;
-    height: 90%;
+    height: 60rem;
 
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 
 .contenedor-img figcaption {
@@ -838,15 +874,29 @@ section {
     width: calc(50% - var(--separacion));
 }
 
-@media (min-width: 768px) {
+@media (min-width: 480px) {
     .seguirme__contenedor-icono {
         width: calc(10rem - var(--separacion));
         height: 10rem;
     }
 }
 
+.seguirme__img {
+    margin: var(--separacion) auto;
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(0px 0px 3rem rgba(255, 255, 255, 0.7));
+}
+
 
 .seguirme__icono {}
+
+.seguirme__icono:hover {
+    animation: icono 2s;
+}
 
 
 /* FOOTER */
@@ -941,8 +991,15 @@ footer {
 .subtitulo {
     text-align: center;
     text-transform: uppercase;
-    text-decoration: underline solid 2px var(--colorBlanco);
+    text-decoration: underline solid 2px var(--colorNuevo);
     margin: .2rem;
+    transition: 2s;
+
+
+}
+
+.subtitulo:hover {
+    cursor: default;
 }
 
 .imagenes-cargadas {

@@ -10,13 +10,34 @@
     <meta name="Keywords" content="hiloramas, hilografía, hilos, san martin, chaco, a lo artesanal, artesanal, hilorama, madera, acrilico, clavos, hilos, string art, deco home, clavos e hilos, porta llaves, cuadros decorativos">
     <meta name="image" content="media/img/a_lo_artesanal.webp">
 
-    <link rel="shortcut icon" href="icon.ico">
+    <!-- icon -->
+    <!-- <link rel="shortcut icon" href="icon.ico"> -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="shortcut icon" href="favicon-96x96.png">
+    <!-- <meta name="theme-color" media="(prefers-color-scheme: light)" content="white">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black"> -->
 
-    <title>A lo artesanal - hiloramas - General Jose de San Martín, Chaco.</title>
+    <title>A lo artesanal - Hiloramas - General Jose de San Martín, Chaco.</title>
 
-    <!-- prefetch -->
-    <link rel="preload" href="css/normalize.min.css" as="style">
-    <link rel="stylesheet" href="css/normalize.min.css">
+    <!-- <link rel="preload" href="css/normalize.min.css" as="style">
+    <link rel="stylesheet" href="css/normalize.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,7 +61,7 @@
 
             <!-- logo -->
             <div class="nav__logo">
-                <a href="index.html"><img src="icon.ico" alt="logo a lo artesanal"></a>
+                <a href="index.html"><img src="/a_lo_artesanal_logo.jpg" alt="logo a lo artesanal"></a>
             </div>
 
             <!-- menu -->
@@ -93,13 +114,13 @@
             </div>
         </nav>
 
-        <div class="header__portada"></div>
+        <!-- <div class="header__portada"></div> -->
 
     </header>
 
 
     <!-- contenedor principal -->
-    <div class="contenedor">
+    <main class="contenedor">
 
         <!-- a_lo_artesanal -->
         <section id="a_lo_artesanal" class="a_lo_artesanal" aria-label="Sección de mi presentación">
@@ -113,17 +134,17 @@
             <h2>Hiloramas - General Jose de San Martín, Chaco.</h2>
 
             <div class="a_lo_artesanal__contenido">
-                <video width="10" controls loading="lazy" preload="metadata">
+                <video width="10" controls preload="metadata">
                     <source src="media/video/rolling.mp4" type="video/mp4">
                     video no soportado por tu navegador.
                 </video>
                 <h3>La hilografía es un estilo de arte poco convencional, que persigue crear cuadros, combinando lo tradicional del dibujo con el uso de materiales sólidos, como el hilo.</h3>
-                <video controls loading="lazy" preload="metadata" poster="media/img/tractor.webp">
+                <video controls preload="metadata" poster="media/img/tractor.webp">
                     <source src="media/video/tractor.mp4" type="video/mp4">
                     video no soportado por tu navegador.
                 </video>
                 <h3>A lo artesanal, es un pequeño emprendimiento personal donde ofrezco trabajos personalizados en el arte de hilorar.</h3>
-                <video controls loading="lazy" preload="metadata">
+                <video controls preload="metadata">
                     <source src="media/video/caballo.mp4" type="video/mp4">
                     video no soportado por tu navegador.
                 </video>
@@ -142,7 +163,7 @@
 
                 <!--1 homero -->
                 <div class="card">
-                    <picture class="item-content card__content">
+                    <figure class="item-content card__content">
                         <h3 class="title">Porta llaves Homero Simpson</h3>
                         <img loading="lazy" src="media/img/homero_porta_llave.webp" alt="hilorama Porta llaves Homero Simpson">
                         <figcaption class="card__detalles">
@@ -150,15 +171,15 @@
                             <p id="detail2">Fondo: acrílico negro</p>
                         </figcaption>
                         <div class="card__content_enlaces">
-                            <a href="https://www.instagram.com/p/CSzUNGJnSyg/?igshid=YmMyMTA2M2Y=" target="_blank" rel="enlace a instagram"> <button class="card__btn_ig"> </button></a>
-                            <a href="https://wa.me/message/ZXX3RIVMBALVF1?text=Homero" target="_blank" rel="enlace a whatsapp"> <button class="card__btn_wa"> </button></a>
+                            <a class="card__btn_ig" href="https://www.instagram.com/p/CSzUNGJnSyg/?igshid=YmMyMTA2M2Y=" target="_blank" rel="enlace a instagram"></a>
+                            <a class="card__btn_wa" href="https://wa.me/message/ZXX3RIVMBALVF1?text=Homero" target="_blank" rel="enlace a whatsapp"></a>
                         </div>
-                    </picture>
+                    </figure>
                 </div>
 
                 <!--2 virgen -->
                 <div class="card">
-                    <picture class="item-content card__content">
+                    <figure class="item-content card__content">
                         <h3 class="title">Cuadro Virgen de Guadalupe</h3>
                         <img loading="lazy" src="media/img/virgen.webp" alt="hilorama Cuadro Virgen de Guadalupe">
                         <figcaption class="card__detalles">
@@ -166,15 +187,15 @@
                             <p>Fondo: impregnante para madera</p>
                         </figcaption>
                         <div class="card__content_enlaces">
-                            <a href="https://www.instagram.com/p/CIuP7UOnHCt/?igshid=YmMyMTA2M2Y=" target="_blank" rel="enlace a instagram"> <button class="card__btn_ig"> </button></a>
-                            <a href="https://wa.me/message/ZXX3RIVMBALVF1?text=virgen%20guadalupe" target="_blank" rel="enlace a whatsapp"> <button class="card__btn_wa"> </button></a>
+                            <a class="card__btn_ig" href="https://www.instagram.com/p/CIuP7UOnHCt/?igshid=YmMyMTA2M2Y=" target="_blank" rel="enlace a instagram"></a>
+                            <a class="card__btn_wa" href="https://wa.me/message/ZXX3RIVMBALVF1?text=virgen%20guadalupe" target="_blank" rel="enlace a whatsapp"></a>
                         </div>
-                    </picture>
+                    </figure>
                 </div>
 
                 <!--3 nirvana -->
                 <div class="card">
-                    <picture class="item-content card__content">
+                    <figure class="item-content card__content">
                         <h3 class="title">Nirvana</h3>
                         <img loading="lazy" src="media/img/nirvana.webp" alt="hilorama nirvana">
                         <figcaption class="card__detalles">
@@ -182,15 +203,15 @@
                             <p>Fondo: acrílico negro</p>
                         </figcaption>
                         <div class="card__content_enlaces">
-                            <a href="https://www.instagram.com/p/COTt19wn1S_/?igshid=YmMyMTA2M2Y=" target="_blank" rel="enlace a instagram"> <button class="card__btn_ig"> </button></a>
-                            <a href="https://wa.me/message/ZXX3RIVMBALVF1?text=nirvana" target="_blank" rel="enlace a whatsapp"> <button class="card__btn_wa"> </button></a>
+                            <a class="card__btn_ig" href="https://www.instagram.com/p/COTt19wn1S_/?igshid=YmMyMTA2M2Y=" target="_blank" rel="enlace a instagram"></a>
+                            <a class="card__btn_wa" href="https://wa.me/message/ZXX3RIVMBALVF1?text=nirvana" target="_blank" rel="enlace a whatsapp"></a>
                         </div>
-                    </picture>
+                    </figure>
                 </div>
 
                 <!--4 rafa (feliz y enojado) -->
                 <div class="card">
-                    <picture class="item-content card__content">
+                    <figure class="item-content card__content">
                         <h3 class="title">Rafa feliz y enojado</h3>
                         <img loading="lazy" src="media/img/feliz_enojado1_.webp" alt="hilorama Rafa feliz y enojado">
                         <figcaption class="card__detalles">
@@ -198,15 +219,15 @@
                             <p>Fondo: pintura acrílica (celeste bahía)</p>
                         </figcaption>
                         <div class="card__content_enlaces">
-                            <a href="https://www.instagram.com/p/Cc6YLHiuRab/?igshid=YmMyMTA2M2Y=" target="_blank" rel="enlace a instagram"> <button class="card__btn_ig"> </button></a>
-                            <a href="https://wa.me/message/ZXX3RIVMBALVF1?text=feliz%20enojado" target="_blank" rel="enlace a whatsapp"> <button class="card__btn_wa"> </button></a>
+                            <a class="card__btn_ig" href="https://www.instagram.com/p/Cc6YLHiuRab/?igshid=YmMyMTA2M2Y=" target="_blank" rel="enlace a instagram"></a>
+                            <a class="card__btn_wa" href="https://wa.me/message/ZXX3RIVMBALVF1?text=feliz%20enojado" target="_blank" rel="enlace a whatsapp"></a>
                         </div>
-                    </picture>
+                    </figure>
                 </div>
 
                 <!--5 porta llave + porta papeles (girasoles) -->
                 <div class="card">
-                    <picture class="item-content card__content">
+                    <figure class="item-content card__content">
                         <h3 class="title">Porta llaves + porta papeles girasoles</h3>
                         <img loading="lazy" src="media/img/porta_llave+porta_papel_girasol.webp" alt="hilorama Porta llaves + porta papeles girasoles">
                         <figcaption class="card__detalles">
@@ -214,15 +235,15 @@
                             <p>Medidas 20cm x 18cm</p>
                         </figcaption>
                         <div class="card__content_enlaces">
-                            <a href="https://www.instagram.com/p/CPjSiR8nQAj/?igshid=YmMyMTA2M2Y=" target="_blank" rel="enlace a instagram"> <button class="card__btn_ig"> </button></a>
-                            <a href="https://wa.me/message/ZXX3RIVMBALVF1?text=porta%20papeles%20girasoles" target="_blank" rel="enlace a whatsapp"> <button class="card__btn_wa"> </button></a>
+                            <a class="card__btn_ig" href="https://www.instagram.com/p/CPjSiR8nQAj/?igshid=YmMyMTA2M2Y=" target="_blank" rel="enlace a instagram"></a>
+                            <a class="card__btn_wa" href="https://wa.me/message/ZXX3RIVMBALVF1?text=porta%20papeles%20girasoles" target="_blank" rel="enlace a whatsapp"></a>
                         </div>
-                    </picture>
+                    </figure>
                 </div>
 
                 <!--6 cerveza -->
                 <div class="card">
-                    <picture class="item-content card__content">
+                    <figure class="item-content card__content">
                         <h3 class="title">Porta llaves cerveza</h3>
                         <img loading="lazy" src="media/img/cerveza_porta_llave1.webp" alt="hilorama porta llaves cerveza">
                         <figcaption class="card__detalles">
@@ -230,15 +251,15 @@
                             <p>Fondo: impregnante para madera</p>
                         </figcaption>
                         <div class="card__content_enlaces">
-                            <a href="https://www.instagram.com/p/CIhKV9XnVFZ/?igshid=YmMyMTA2M2Y=" target="_blank" rel="enlace a instagram"> <button class="card__btn_ig"> </button></a>
-                            <a href="https://wa.me/message/ZXX3RIVMBALVF1?text=porta%20llave%20cerveza" target="_blank" rel="enlace a whatsapp"> <button class="card__btn_wa"> </button></a>
+                            <a class="card__btn_ig" href="https://www.instagram.com/p/CIhKV9XnVFZ/?igshid=YmMyMTA2M2Y=" target="_blank" rel="enlace a instagram"></a>
+                            <a class="card__btn_wa" href="https://wa.me/message/ZXX3RIVMBALVF1?text=porta%20llave%20cerveza" target="_blank" rel="enlace a whatsapp"></a>
                         </div>
-                    </picture>
+                    </figure>
                 </div>
 
                 <!--7 ac-dc -->
                 <div class="card">
-                    <picture class="item-content card__content">
+                    <figure class="item-content card__content">
                         <h3 class="title">AC-DC</h3>
                         <img loading="lazy" src="media/img/AC-DC.webp" alt="hilorama AC-DC">
                         <figcaption class="card__detalles">
@@ -246,15 +267,15 @@
                             <p>Fondo: impregnante para madera</p>
                         </figcaption>
                         <div class="card__content_enlaces">
-                            <a href="https://www.instagram.com/p/COabPyVHXcJ/?igshid=YmMyMTA2M2Y=" target="_blank" rel="enlace a instagram"> <button class="card__btn_ig"> </button></a>
-                            <a href="https://wa.me/message/ZXX3RIVMBALVF1?text=AC%20DC" target="_blank" rel="enlace a whatsapp"> <button class="card__btn_wa"> </button></a>
+                            <a class="card__btn_ig" href="https://www.instagram.com/p/COabPyVHXcJ/?igshid=YmMyMTA2M2Y=" target="_blank" rel="enlace a instagram"></a>
+                            <a class="card__btn_wa" href="https://wa.me/message/ZXX3RIVMBALVF1?text=AC%20DC" target="_blank" rel="enlace a whatsapp"></a>
                         </div>
-                    </picture>
+                    </figure>
                 </div>
 
                 <!--8 tractor -->
                 <div class="card">
-                    <picture class="item-content card__content">
+                    <figure class="item-content card__content">
                         <h3 class="title">Tractor</h3>
                         <img loading="lazy" src="media/img/tractor.webp" alt="hilorama tractor">
                         <figcaption class="card__detalles">
@@ -262,15 +283,15 @@
                             <p>Fondo: acrílico blanco</p>
                         </figcaption>
                         <div class="card__content_enlaces">
-                            <a href="https://www.instagram.com/p/Cbas2KdO1mz/?igshid=YmMyMTA2M2Y=" target="_blank" rel="enlace a instagram"> <button class="card__btn_ig"> </button></a>
-                            <a href="https://wa.me/message/ZXX3RIVMBALVF1?text=tractor" target="_blank" rel="enlace a whatsapp"> <button class="card__btn_wa"> </button></a>
+                            <a class="card__btn_ig" href="https://www.instagram.com/p/Cbas2KdO1mz/?igshid=YmMyMTA2M2Y=" target="_blank" rel="enlace a instagram"></a>
+                            <a class="card__btn_wa" href="https://wa.me/message/ZXX3RIVMBALVF1?text=tractor" target="_blank" rel="enlace a whatsapp"></a>
                         </div>
-                    </picture>
+                    </figure>
                 </div>
 
                 <!--9 mandala om -->
                 <div class="card">
-                    <picture class="item-content card__content">
+                    <figure class="item-content card__content">
                         <h3 class="title">Mandala om</h3>
                         <img loading="lazy" src="media/img/mandala.webp" alt="hilorama mandala om">
                         <figcaption class="card__detalles">
@@ -278,15 +299,15 @@
                             <p>Fondo: impregnante para madera</p>
                         </figcaption>
                         <div class="card__content_enlaces">
-                            <a href="https://www.instagram.com/p/CO-YmqsnbRz/?igshid=YmMyMTA2M2Y=" target="_blank" rel="enlace a instagram"> <button class="card__btn_ig"> </button></a>
-                            <a href="https://wa.me/message/ZXX3RIVMBALVF1?text=mandala%20om" target="_blank" rel="enlace a whatsapp"> <button class="card__btn_wa"> </button></a>
+                            <a class="card__btn_ig" href="https://www.instagram.com/p/CO-YmqsnbRz/?igshid=YmMyMTA2M2Y=" target="_blank" rel="enlace a instagram"></a>
+                            <a class="card__btn_wa" href="https://wa.me/message/ZXX3RIVMBALVF1?text=mandala%20om" target="_blank" rel="enlace a whatsapp"></a>
                         </div>
-                    </picture>
+                    </figure>
                 </div>
 
                 <!--10 rolling -->
                 <div class="card">
-                    <picture class="item-content card__content">
+                    <figure class="item-content card__content">
                         <h3 class="title">Rolling stones</h3>
                         <img loading="lazy" src="media/img/rolling.webp" alt="hilorama Rolling Stones">
                         <figcaption class="card__detalles">
@@ -294,15 +315,15 @@
                             <p>Fondo: acrílico blanco</p>
                         </figcaption>
                         <div class="card__content_enlaces">
-                            <a href="https://www.instagram.com/p/Cbas2KdO1mz/?igshid=YmMyMTA2M2Y=" target="_blank" rel="enlace a instagram"> <button class="card__btn_ig"> </button></a>
-                            <a href="https://wa.me/message/ZXX3RIVMBALVF1?text=rolling%20stones" target="_blank" rel="enlace a whatsapp"> <button class="card__btn_wa"> </button></a>
+                            <a class="card__btn_ig" href="https://www.instagram.com/p/Cbas2KdO1mz/?igshid=YmMyMTA2M2Y=" target="_blank" rel="enlace a instagram"></a>
+                            <a class="card__btn_wa" href="https://wa.me/message/ZXX3RIVMBALVF1?text=rolling%20stones" target="_blank" rel="enlace a whatsapp"></a>
                         </div>
-                    </picture>
+                    </figure>
                 </div>
 
                 <!--11 stich -->
                 <div class="card">
-                    <picture class="item-content card__content">
+                    <figure class="item-content card__content">
                         <h3 class="title">STICH</h3>
                         <img loading="lazy" src="media/img/stich.webp" alt="hilorama stich">
                         <figcaption class="card__detalles">
@@ -310,15 +331,15 @@
                             <p>Fondo: impregnante para madera</p>
                         </figcaption>
                         <div class="card__content_enlaces">
-                            <a href="https://www.instagram.com/p/CPOipcpHqpw/?igshid=YmMyMTA2M2Y=" target="_blank" rel="enlace a instagram"> <button class="card__btn_ig"> </button></a>
-                            <a href="https://wa.me/message/ZXX3RIVMBALVF1?text=STICH" target="_blank" rel="enlace a whatsapp"> <button class="card__btn_wa"> </button></a>
+                            <a class="card__btn_ig" href="https://www.instagram.com/p/CPOipcpHqpw/?igshid=YmMyMTA2M2Y=" target="_blank" rel="enlace a instagram"></a>
+                            <a class="card__btn_wa" href="https://wa.me/message/ZXX3RIVMBALVF1?text=STICH" target="_blank" rel="enlace a whatsapp"></a>
                         </div>
-                    </picture>
+                    </figure>
                 </div>
 
                 <!--12 porta llave girasoles -->
                 <div class="card">
-                    <picture class="item-content card__content">
+                    <figure class="item-content card__content">
                         <h3 class="title">Porta llaves Girasoles</h3>
                         <img loading="lazy" src="media/img/porta_llave_girasoles.webp" alt="hilorama porta llave girasoles">
                         <figcaption class="card__detalles">
@@ -326,15 +347,15 @@
                             <p>Fondo: acrílico blanco</p>
                         </figcaption>
                         <div class="card__content_enlaces">
-                            <a href="https://www.instagram.com/p/CPGQF3MnT0I/?igshid=YmMyMTA2M2Y=" target="_blank" rel="enlace a instagram"> <button class="card__btn_ig"> </button></a>
-                            <a href="https://wa.me/message/ZXX3RIVMBALVF1?text=porta%20llaves%20girasoles" target="_blank" rel="enlace a whatsapp"> <button class="card__btn_wa"> </button></a>
+                            <a class="card__btn_ig" href="https://www.instagram.com/p/CPGQF3MnT0I/?igshid=YmMyMTA2M2Y=" target="_blank" rel="enlace a instagram"></a>
+                            <a class="card__btn_wa" href="https://wa.me/message/ZXX3RIVMBALVF1?text=porta%20llaves%20girasoles" target="_blank" rel="enlace a whatsapp"></a>
                         </div>
-                    </picture>
+                    </figure>
                 </div>
 
                 <!--13 beso -->
                 <div class="card">
-                    <picture class="item-content card__content">
+                    <figure class="item-content card__content">
                         <h3 class="title">Porta llaves beso</h3>
                         <img loading="lazy" src="media/img/porta_llave_beso.webp" alt="hilorama porta llaves beso">
                         <figcaption class="card__detalles">
@@ -342,15 +363,15 @@
                             <p>Fondo: acrílico negro</p>
                         </figcaption>
                         <div class="card__content_enlaces">
-                            <a href="https://www.instagram.com/p/CPjSiR8nQAj/?igshid=YmMyMTA2M2Y=" target="_blank" rel="enlace a instagram"> <button class="card__btn_ig"> </button></a>
-                            <a href="https://wa.me/message/ZXX3RIVMBALVF1?text=porta%20llave%20beso" target="_blank" rel="enlace a whatsapp"> <button class="card__btn_wa"> </button></a>
+                            <a class="card__btn_ig" href="https://www.instagram.com/p/CPjSiR8nQAj/?igshid=YmMyMTA2M2Y=" target="_blank" rel="enlace a instagram"></a>
+                            <a class="card__btn_wa" href="https://wa.me/message/ZXX3RIVMBALVF1?text=porta%20llave%20beso" target="_blank" rel="enlace a whatsapp"></a>
                         </div>
-                    </picture>
+                    </figure>
                 </div>
 
                 <!--14 cactus x3 -->
                 <div class="card">
-                    <picture class="item-content card__content">
+                    <figure class="item-content card__content">
                         <h3 class="title">Cactus x3 🌵</h3>
                         <img loading="lazy" src="media/img/cactusX3_1.webp" alt="hilorama Cactus x 3 🌵">
                         <figcaption class="card__detalles">
@@ -358,10 +379,10 @@
                             <p>Fondo: impregnante para madera</p>
                         </figcaption>
                         <div class="card__content_enlaces">
-                            <a href="https://www.instagram.com/p/COiuNuVnK6k/?igshid=YmMyMTA2M2Y=" target="_blank" rel="enlace a instagram"> <button class="card__btn_ig"> </button></a>
-                            <a href="https://wa.me/message/ZXX3RIVMBALVF1?text=cactus%20x3" target="_blank" rel="enlace a whatsapp"> <button class="card__btn_wa"> </button></a>
+                            <a class="card__btn_ig" href="https://www.instagram.com/p/COiuNuVnK6k/?igshid=YmMyMTA2M2Y=" target="_blank" rel="enlace a instagram"></a>
+                            <a class="card__btn_wa" href="https://wa.me/ZXX3RIVMBALVF1?text=Cactus%20x3" target="_blank" rel="enlace a whatsapp"></a>
                         </div>
-                    </picture>
+                    </figure>
                 </div>
 
 
@@ -379,10 +400,10 @@
                             </a>
                         </button>
 
-                        <picture>
+                        <figure>
                             <img src="" alt="">
                             <figcaption></figcaption>
-                        </picture>
+                        </figure>
 
                     </div>
                 </div>
@@ -395,7 +416,10 @@
         <!-- seguirme -->
         <section id="seguirme" class="seguirme" aria-label="Sección para seguirme en mis redes sociales y contactarme">
 
-            <h2 class="subtitulo no-padding centrar-texto">Seguirme</h2>
+            <h2 class="subtitulo no-padding no-margin centrar-texto">Seguirme</h2>
+
+            <img class="seguirme__img" loading="lazy" src="media/img/a_lo_artesanal_logo_circular_transparencia.png" alt="seguir a lo artesanal en redes sociales logo">
+
             <h3>Seguime en mis redes para ver más y solicitar pedidos.</h3>
 
             <div class="seguirme__rs">
@@ -413,21 +437,23 @@
 
                 <div class="seguirme__contenedor-icono">
                     <a href="https://www.facebook.com/artesaniasmaderas.5259" target="_blank">
-                        <img class="seguirme__icono" src="media/logo_face.svg" alt="escribeme en facebook">
+                        <img class="seguirme__icono" src="media/logo_face.svg" alt="escríbeme en facebook">
                     </a>
                 </div>
 
                 <div class="seguirme__contenedor-icono">
-                    <a href="https://wa.me/message/ZXX3RIVMBALVF1" target="_blank">
-                        <img class="seguirme__icono" src="media/logo_wa.svg" alt="escríbeme en whatsapp">
+                    <a href="https://wa.me/c/5493725572238" target="_blank">
+                        <img class="seguirme__icono" src="media/logo_wa.svg" alt="mirar catálogo en whatsapp">
                     </a>
                 </div>
 
             </div>
 
+
+
         </section>
 
-    </div>
+    </main>
 
     <!-- footer -->
     <footer class="contenedor-footer">
